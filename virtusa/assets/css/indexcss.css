@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@media only screen and (max-width: 600px) {
+    .green,.red,.blue{
+        display: none;
+    }
+    .home h1{
+        font-size:20px;
+    }
+    .home h2{
+        font-size: 17px;
+    }
+    .home img{
+        width: 100px;
+    }
+    .home center{
+        transform: translate(50%,50%);
+       
+    }
+    .home button{
+        padding: 7px 8px;  
+        font-size:14px;
+        margin: 4px;
+    }
+    .name{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .home center{
+        transform: translate(0%,50%);
+
+    }
+    .home button{
+        padding: 7px 8px;  
+        font-size:14px;
+        margin: 4px;
+    }
+    .green,.red,.blue{
+        display: none;
+    }
+    .img{
+        width: 40%;
+        height: 100%;
+        background-image: url("../img/Index.png");
+        background-position:right;
+        background-size: cover;
+        display: inline-block;
+    }
+    
+}
+@media only screen and (min-width: 840px) {
+    .green,.red,.blue{
+        display:inline-block;
+    }
+    .home img{
+        width: 130px;
+    }
+   
+    .name{
+        font-size: 21px;
+    }
+    .img{
+        width: 40%;
+        height: 100%;
+        background-image: url("../img/Index.png");
+        background-position:right;
+        background-size: cover;
+        display: inline-block;
+    }
+    .home button{
+        padding: 10px 23px;
+        margin: 20px;
+        font-size: 18px;
+    }
+}
+
+
+.home{
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+   
+    color: #707070;
+    
+}
+.blue{
+    -webkit-clip-path: polygon(48% 16%, 36% 0, 100% 0, 100% 50%, 81% 42%, 64% 31%);
+    clip-path: polygon(48% 16%, 36% 0, 100% 0, 100% 50%, 81% 42%, 64% 31%);
+    width: 500px;
+    float: right;
+}
+.green{
+    -webkit-clip-path: polygon(0 0, 100% 0, 45% 21%);
+    clip-path: polygon(0 0, 100% 0, 45% 21%);
+    float: inherit;
+    position: absolute;
+    margin-left: -14%;
+    width: 380px;
+}
+.red{
+    -webkit-clip-path: polygon(15% 83%, 28% 74%, 81% 100%, 0 100%, 6% 92%);
+    clip-path: polygon(15% 83%, 28% 74%, 81% 100%, 0 100%, 6% 92%);
+    position: absolute;
+    bottom: 0;
+}
+.home h1{
+    text-shadow: 1px 1px 4px #707070;
+    font-family: Alaska;
+    font-weight: 400;
+}
+.home h2{
+    font-weight: 400;
+}
+
+.home button{
+    color: white;
+    background-color: #2BCC4B;
+    border: #2BCC4B;
+    border-radius: 5px;
+    border: 1px solid #2BCC4B;
+    
+    transition: 0.4s ease;
+}
+.home button:hover{
+    color: #2BCC4B;
+    border: 1px solid #2BCC4B;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name{
+     position: absolute;
+    bottom: 0;
+    right: 0;
+     margin-bottom: 15px;
+     margin-right: 40px;
+   
+     color: #707070;
+     text-decoration: none;
+     border-bottom: 1px solid #2BCC4B;
+     line-height: 25px;
+    transition: 0.4s ease;
+}
+.name:hover{
+    color: #2BCC4B;
+}
